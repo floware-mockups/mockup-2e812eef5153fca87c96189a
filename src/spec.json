@@ -1,0 +1,358 @@
+{
+  "title": "Gestione inventario dell’economato",
+  "description": "Prototipo navigabile per monitorare giacenze e scorte minime, registrare carichi e scarichi e gestire le richieste di materiale degli uffici. Tutti i nomi e i dati sono inventati.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "cruscotto",
+      "title": "Cruscotto",
+      "description": "Panoramica delle scorte e delle richieste di materiale.",
+      "metrics": [
+        {
+          "label": "Articoli inventariati",
+          "value": "12"
+        },
+        {
+          "label": "Articoli sotto scorta",
+          "value": "4"
+        },
+        {
+          "label": "Richieste in attesa",
+          "value": "3"
+        },
+        {
+          "label": "Movimenti registrati",
+          "value": "8"
+        }
+      ],
+      "columns": [
+        "Articolo",
+        "Categoria",
+        "Giacenza",
+        "Scorta minima",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Carta Lumo A4",
+          "Cancelleria",
+          "8 risme",
+          "12 risme",
+          "Sotto scorta"
+        ],
+        [
+          "Penna Vela blu",
+          "Cancelleria",
+          "36 pezzi",
+          "20 pezzi",
+          "Disponibile"
+        ],
+        [
+          "Toner Nubi nero",
+          "Toner",
+          "2 cartucce",
+          "4 cartucce",
+          "Sotto scorta"
+        ],
+        [
+          "Detergente Seta multiuso",
+          "Pulizia",
+          "5 flaconi",
+          "6 flaconi",
+          "Sotto scorta"
+        ],
+        [
+          "Panno Brina assorbente",
+          "Pulizia",
+          "14 pezzi",
+          "8 pezzi",
+          "Disponibile"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "articoli",
+      "title": "Articoli",
+      "description": "Elenco filtrabile dell’inventario con giacenze e soglie minime. La ricerca e i filtri sono distinti dal form di inserimento.",
+      "metrics": [
+        {
+          "label": "Articoli",
+          "value": "12"
+        },
+        {
+          "label": "Sotto scorta",
+          "value": "4"
+        }
+      ],
+      "columns": [
+        "Articolo",
+        "Categoria",
+        "Unità",
+        "Giacenza",
+        "Scorta minima"
+      ],
+      "rows": [
+        [
+          "Carta Lumo A4",
+          "Cancelleria",
+          "Risma",
+          "8",
+          "12"
+        ],
+        [
+          "Penna Vela blu",
+          "Cancelleria",
+          "Pezzo",
+          "36",
+          "20"
+        ],
+        [
+          "Matita Nubi HB",
+          "Cancelleria",
+          "Pezzo",
+          "52",
+          "25"
+        ],
+        [
+          "Quaderno Alba righe",
+          "Cancelleria",
+          "Pezzo",
+          "18",
+          "10"
+        ],
+        [
+          "Toner Nubi nero",
+          "Toner",
+          "Cartuccia",
+          "2",
+          "4"
+        ],
+        [
+          "Toner Lumo ciano",
+          "Toner",
+          "Cartuccia",
+          "5",
+          "3"
+        ],
+        [
+          "Toner Vela magenta",
+          "Toner",
+          "Cartuccia",
+          "3",
+          "3"
+        ],
+        [
+          "Toner Alba giallo",
+          "Toner",
+          "Cartuccia",
+          "1",
+          "2"
+        ],
+        [
+          "Detergente Seta multiuso",
+          "Pulizia",
+          "Flacone",
+          "5",
+          "6"
+        ],
+        [
+          "Sapone Brina mani",
+          "Pulizia",
+          "Flacone",
+          "11",
+          "5"
+        ],
+        [
+          "Panno Brina assorbente",
+          "Pulizia",
+          "Pezzo",
+          "14",
+          "8"
+        ],
+        [
+          "Sacchetto Nubi raccolta",
+          "Pulizia",
+          "Confezione",
+          "7",
+          "9"
+        ]
+      ],
+      "form": [
+        "Articolo",
+        "Categoria",
+        "Unità",
+        "Giacenza",
+        "Scorta minima"
+      ]
+    },
+    {
+      "id": "movimenti",
+      "title": "Carichi e scarichi",
+      "description": "Registra entrate e uscite di materiali e consulta i movimenti recenti.",
+      "metrics": [
+        {
+          "label": "Carichi recenti",
+          "value": "4"
+        },
+        {
+          "label": "Scarichi recenti",
+          "value": "4"
+        },
+        {
+          "label": "Movimenti totali",
+          "value": "8"
+        }
+      ],
+      "columns": [
+        "Articolo",
+        "Tipo movimento",
+        "Quantità",
+        "Destinazione o provenienza",
+        "Data"
+      ],
+      "rows": [
+        [
+          "Carta Lumo A4",
+          "Carico",
+          "10 risme",
+          "Deposito economato",
+          "12/06/2025"
+        ],
+        [
+          "Toner Nubi nero",
+          "Scarico",
+          "1 cartuccia",
+          "Ufficio Lume",
+          "12/06/2025"
+        ],
+        [
+          "Detergente Seta multiuso",
+          "Carico",
+          "6 flaconi",
+          "Deposito economato",
+          "11/06/2025"
+        ],
+        [
+          "Penna Vela blu",
+          "Scarico",
+          "12 pezzi",
+          "Ufficio Rugiada",
+          "11/06/2025"
+        ],
+        [
+          "Toner Alba giallo",
+          "Scarico",
+          "1 cartuccia",
+          "Ufficio Selce",
+          "10/06/2025"
+        ],
+        [
+          "Matita Nubi HB",
+          "Carico",
+          "20 pezzi",
+          "Deposito economato",
+          "10/06/2025"
+        ],
+        [
+          "Panno Brina assorbente",
+          "Scarico",
+          "4 pezzi",
+          "Ufficio Lume",
+          "09/06/2025"
+        ],
+        [
+          "Sacchetto Nubi raccolta",
+          "Carico",
+          "5 confezioni",
+          "Deposito economato",
+          "09/06/2025"
+        ]
+      ],
+      "form": [
+        "Articolo",
+        "Tipo movimento",
+        "Quantità",
+        "Destinazione o provenienza",
+        "Data"
+      ]
+    },
+    {
+      "id": "richieste",
+      "title": "Richieste degli uffici",
+      "description": "Consulta e filtra le richieste di materiale degli uffici, aggiornandone lo stato.",
+      "metrics": [
+        {
+          "label": "In attesa",
+          "value": "3"
+        },
+        {
+          "label": "Approvate",
+          "value": "2"
+        },
+        {
+          "label": "Evase",
+          "value": "1"
+        }
+      ],
+      "columns": [
+        "Ufficio",
+        "Articolo",
+        "Quantità",
+        "Data richiesta",
+        "Stato"
+      ],
+      "rows": [
+        [
+          "Ufficio Lume",
+          "Carta Lumo A4",
+          "4 risme",
+          "12/06/2025",
+          "In attesa"
+        ],
+        [
+          "Ufficio Rugiada",
+          "Toner Nubi nero",
+          "1 cartuccia",
+          "12/06/2025",
+          "In attesa"
+        ],
+        [
+          "Ufficio Selce",
+          "Detergente Seta multiuso",
+          "2 flaconi",
+          "11/06/2025",
+          "Approvata"
+        ],
+        [
+          "Ufficio Brina",
+          "Penna Vela blu",
+          "10 pezzi",
+          "11/06/2025",
+          "Evasa"
+        ],
+        [
+          "Ufficio Alba",
+          "Toner Alba giallo",
+          "1 cartuccia",
+          "10/06/2025",
+          "In attesa"
+        ],
+        [
+          "Ufficio Nube",
+          "Panno Brina assorbente",
+          "6 pezzi",
+          "10/06/2025",
+          "Approvata"
+        ]
+      ],
+      "form": [
+        "Ufficio",
+        "Articolo",
+        "Quantità",
+        "Data richiesta",
+        "Stato"
+      ]
+    }
+  ]
+}
